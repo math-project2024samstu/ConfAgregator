@@ -64,7 +64,7 @@ export const Conferences = () => {
     const monthIndex = parseInt(month, 10) - 1;
     const monthName = months[monthIndex];
 
-    return `${day} ${monthName} 2024 года`;
+    return `${day} ${monthName} 2024 г.`;
   };
 
   // Сортировка конференций по дате
