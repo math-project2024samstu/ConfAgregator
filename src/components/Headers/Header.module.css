@@ -1,0 +1,43 @@
+.header {
+  position: fixed; /* Делаем хедер фиксированным */
+  top: 0; /* Фиксируем его к верхней части экрана */
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #4a90e2;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Повышаем уровень слоя, чтобы он был поверх других элементов */
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navItem a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navItem a:hover {
+  color: #f9f9f9;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* Добавляем отступ для основного контента, чтобы не скрывался под фиксированным хедером */
+body {
+  padding-top: 70px; /* Подстраиваем под высоту хедера */
+}
